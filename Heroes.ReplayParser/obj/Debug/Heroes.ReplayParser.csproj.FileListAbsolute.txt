@@ -1,0 +1,5 @@
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser\bin\Debug - 2010\Heroes.ReplayParser.dll
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser\bin\Debug - 2010\Heroes.ReplayParser.pdb
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser\obj\Debug\Heroes.ReplayParser.csprojResolveAssemblyReference.cache
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser\obj\Debug\Heroes.ReplayParser.dll
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser\obj\Debug\Heroes.ReplayParser.pdb

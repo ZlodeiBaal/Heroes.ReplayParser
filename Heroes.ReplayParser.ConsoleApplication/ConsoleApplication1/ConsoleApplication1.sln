@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1.csproj", "{861DB181-6C12-48CB-AA2A-19B374ECA319}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heroes.ReplayParser", "..\..\Heroes.ReplayParser\Heroes.ReplayParser.csproj", "{AAF78D53-A1DA-424A-B1AA-09895EAB3B2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeroAnalitics", "..\HeroAnalitics\HeroAnalitics.csproj", "{B5D92968-F83E-4A20-9B3D-FFFC8927DFD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,12 @@ Global
 		{AAF78D53-A1DA-424A-B1AA-09895EAB3B2B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AAF78D53-A1DA-424A-B1AA-09895EAB3B2B}.Release|x86.ActiveCfg = Release|x86
 		{AAF78D53-A1DA-424A-B1AA-09895EAB3B2B}.Release|x86.Build.0 = Release|x86
+		{B5D92968-F83E-4A20-9B3D-FFFC8927DFD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5D92968-F83E-4A20-9B3D-FFFC8927DFD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5D92968-F83E-4A20-9B3D-FFFC8927DFD3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B5D92968-F83E-4A20-9B3D-FFFC8927DFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5D92968-F83E-4A20-9B3D-FFFC8927DFD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5D92968-F83E-4A20-9B3D-FFFC8927DFD3}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

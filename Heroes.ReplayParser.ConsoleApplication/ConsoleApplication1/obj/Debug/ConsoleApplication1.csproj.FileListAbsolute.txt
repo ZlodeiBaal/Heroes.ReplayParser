@@ -1,0 +1,9 @@
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\ConsoleApplication1\bin\Debug\Heroes.ReplayParser.dll
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\ConsoleApplication1\bin\Debug\MpqLib.dll
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\ConsoleApplication1\bin\Debug\Heroes.ReplayParser.pdb
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

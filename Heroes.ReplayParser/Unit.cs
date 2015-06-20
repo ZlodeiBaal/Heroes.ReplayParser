@@ -456,9 +456,37 @@ namespace Heroes.ReplayParser
             44, // 16
             65  // 20
         };
-
-        public static void ParseUnitData(Replay replay)
+     //   public var heroCCmdEventLists;
+        public class HeroPosList
         {
+            public string Name;
+            public string Player;
+            public List<TimePos> TP;
+            public int team;
+            public HeroPosList(string n, string p,int t)
+            {
+                Name = n;
+                TP = new List<TimePos>();
+                Player = p;
+                team = t;
+            }
+        }
+        public class TimePos
+        {
+            public int x;
+            public int y;
+            public TimeSpan ts;
+            public TimePos(int X, int Y, TimeSpan s)
+            {
+                x = X;
+                y = Y;
+                ts=s;
+            }
+        }
+
+        public static List<HeroPosList> ParseUnitData(Replay replay)
+        {
+             List<HeroPosList> HPL = new List<HeroPosList>();
             // Get array of units from 'UnitBornEvent'
             replay.Units = replay.TrackerEvents.Where(i => i.TrackerEventType == ReplayTrackerEvents.TrackerEventType.UnitBornEvent).Select(i => new Unit {
                 UnitID = Unit.GetUnitID((int)i.Data.dictionary[0].vInt.Value, (int)i.Data.dictionary[1].vInt.Value),
@@ -606,6 +634,8 @@ namespace Heroes.ReplayParser
                 else
                     fullTimerDeaths.AddRange(player.Deaths);
 
+                
+
 
                 // Normal death timer deaths
                 // This is all deaths for most heroes, and Murky deaths if he didn't respawn from his egg
@@ -648,9 +678,9 @@ namespace Heroes.ReplayParser
 
                 player.HeroUnits[0].Positions = player.HeroUnits[0].Positions.OrderBy(i => i.TimeSpan).ToList();
             }
-
+            HPL = new List<HeroPosList>();
             // Estimate Hero positions from CCmdEvent and CCmdUpdateTargetPointEvent (Movement points)
-            {
+            ////////{
                 // List of Hero units (Excluding heroes with multiple units like Lost Vikings - not sure how to handle those)
                 // This is different from the above dictionary in that it excludes Abathur if he chooses the clone hero talent
                 // It's okay to not estimate Abathur's position, as he rarely moves and we also get an accurate position each time he spawns a locust
@@ -677,6 +707,7 @@ namespace Heroes.ReplayParser
                     // Estimate the hero unit travelling to each intended destination
                     // Only save one position per second, and prefer accurate positions
                     // Heroes can have a lot more positions, and probably won't be useful more frequently than this
+                    HPL.Add(new HeroPosList(heroCCmdEventList.HeroUnit.Name, heroCCmdEventList.HeroUnit.PlayerControlledBy.Name, (int)heroCCmdEventList.HeroUnit.Team));
                     var heroTargetLocationArray = heroCCmdEventList.HeroUnit.Positions.Union(new[] { new Position { TimeSpan = heroCCmdEventList.HeroUnit.TimeSpanBorn, Point = heroCCmdEventList.HeroUnit.PointBorn } }).Union(heroCCmdEventList.Positions).GroupBy(i => (int)i.TimeSpan.TotalSeconds).Select(i => i.OrderBy(j => j.IsEstimated).First()).OrderBy(i => i.TimeSpan).ToArray();
                     var currentEstimatedPosition = heroTargetLocationArray[0];
                     for (var i = 0; i < heroTargetLocationArray.Length - 1; i++)
@@ -696,9 +727,11 @@ namespace Heroes.ReplayParser
                             heroCCmdEventList.HeroUnit.Positions.Add(currentEstimatedPosition);
                         }
                     heroCCmdEventList.HeroUnit.Positions = heroCCmdEventList.HeroUnit.Positions.OrderBy(i => i.TimeSpan).ToList();
+                    for (int j = 0; j < heroCCmdEventList.HeroUnit.Positions.Count; j++)
+                        HPL[HPL.Count - 1].TP.Add(new TimePos(heroCCmdEventList.HeroUnit.Positions[j].Point.X, heroCCmdEventList.HeroUnit.Positions[j].Point.Y, heroCCmdEventList.HeroUnit.Positions[j].TimeSpan));
                 }
-            }
-
+            
+/////////}
             foreach (var unit in replay.Units.Where(i => i.Positions.Any()))
             {
                 // Save no more than one position event per second per unit
@@ -806,7 +839,9 @@ namespace Heroes.ReplayParser
                         && unitPositions[i].Point.Y == unitPositions[i + 1].Point.Y)
                         unit.Positions.Remove(unitPositions[i]);
             }
+            return HPL;
         }
+       
     }
 
     public class Point

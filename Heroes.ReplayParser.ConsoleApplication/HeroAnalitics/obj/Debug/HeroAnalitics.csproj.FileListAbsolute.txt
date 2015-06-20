@@ -1,0 +1,12 @@
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\HeroAnalitics\bin\Debug\HeroAnalitics.exe.config
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\HeroAnalitics\bin\Debug\HeroAnalitics.exe
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\HeroAnalitics\bin\Debug\HeroAnalitics.pdb
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\HeroAnalitics\bin\Debug\Heroes.ReplayParser.dll
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\HeroAnalitics\bin\Debug\MpqLib.dll
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\HeroAnalitics\bin\Debug\Heroes.ReplayParser.pdb
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\HeroAnalitics\obj\Debug\HeroAnalitics.csprojResolveAssemblyReference.cache
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\HeroAnalitics\obj\Debug\HeroAnalitics.Form1.resources
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\HeroAnalitics\obj\Debug\HeroAnalitics.Properties.Resources.resources
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\HeroAnalitics\obj\Debug\HeroAnalitics.csproj.GenerateResource.Cache
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\HeroAnalitics\obj\Debug\HeroAnalitics.exe
+D:\Work\MyProjects\HOTS\Heroes.ReplayParser\Heroes.ReplayParser.ConsoleApplication\HeroAnalitics\obj\Debug\HeroAnalitics.pdb
